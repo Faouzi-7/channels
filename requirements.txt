@@ -1,0 +1,7 @@
+django
+redis
+django-redis
+djangorestframework
+channels[daphne]
+channels-redis
+channels-binding

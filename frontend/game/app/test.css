@@ -1,0 +1,125 @@
+/* .board 
+{
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}; */
+.hd
+{
+  display: none;
+  color : red;
+}
+
+.tile {
+  color: black;
+  font-weight: bolder;
+  font-size: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /* Default: 3 columns, each 200px */
+  grid-template-rows: repeat(3, 200px);    /* Default: 3 rows, each 200px */
+  border: 5px solid black;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 5%;
+  width: 600px;  /* Default width */
+  height: 600px; /* Default height */
+  box-sizing: border-box;
+}
+.x-hover:hover::after {
+	content: "X";
+	opacity: 0.4;
+  }
+  
+  .o-hover:hover::after {
+	content: "O";
+	opacity: 0.4;
+  }
+/* Responsive Design: For smaller screens */
+/*  */
+.strike
+{
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+}
+.strike-row-1 {
+	width: 100%;
+	height: 5%;
+	top: 15%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-row-2 {
+	width: 100%;
+	height: 5%;
+	top: 48%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-row-3 {
+	width: 100%;
+	height: 5%;
+	top: 83%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-column-1 {
+	height: 100%;
+	width: 5%;
+	left: 15%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-column-2 {
+	height: 100%;
+	width: 5%;
+	left: 48%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-column-3 {
+	height: 100%;
+	width: 5%;
+	left: 83%;
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-diagonal-1 {
+	width: 90%;
+	height: 5%;
+	top: 50%;
+	left: 5%;
+	transform: skewY(45deg);
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
+  .strike-diagonal-2 {
+	width: 90%;
+	height: 5%;
+	top: 50%;
+	left: 5%;
+	transform: skewY(-45deg);
+  position: absolute;
+	border-radius: 50%;
+	background-color: black;
+  }
